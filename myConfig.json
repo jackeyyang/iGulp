@@ -1,0 +1,47 @@
+var cf = {
+src: {
+file: {
+scss: ['src/sass/**/*.scss'],
+js: 'src/js/**/*.js',
+img: ['src/img/**/*', '!src/img/myicon/*.*'],
+myicons: 'src/img/myicon/*.png',
+spriteImg: 'src/img/' + o.spriteName +'.png',
+spriteScss: 'src/scss/_' + o.spriteName + '.scss',
+font: 'src/font/*',
+html: 'src/html/**/*',
+vendor: 'src/vendor/**/*'
+},
+dir: {
+scss: 'src/scss/',
+css: 'src/css/',
+js: 'src/js/',
+img: 'src/img/',
+sprite: 'src/img/myicon/',
+font: 'src/font/'
+}
+},
+dist: {
+file: {
+css: 'dist/css/**/*.css'
+},
+dir: {
+root: 'dist',
+js: 'dist/js',
+css: 'dist/css',
+img: 'dist/img',
+font: 'dist/font',
+html: 'dist/html',
+vendor: 'dist/vendor'
+}
+},
+autoprefixerBrowsers: [
+'Android 2.3',
+'Android >= 4',
+'Chrome >= 20',
+'Firefox >= 24',
+'Explorer >= 8',
+'iOS >= 6',
+'Opera >= 12',
+'Safari >= 6'
+]
+};
