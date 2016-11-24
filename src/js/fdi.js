@@ -11,3 +11,4 @@ var a = function () {
 }();
 
 a.ai();
+alert('#ff');
