@@ -29,7 +29,7 @@ var o = {
 
 var config = {
     src: {
-        root: 'src',
+        // root: 'src',
         file: {
             scss: ['src/sass/**/*.scss'],
             js: 'src/js/**/*.js',
@@ -83,10 +83,6 @@ gulp.task('sass', ['cleanCss'], function () {
         }))
 
         .pipe(sourcemaps.write())
-        .pipe(sourcemaps.write('map', {
-            includeContent: false,
-            sourceRoot: 'scss'
-        }))
 
         .pipe(minifycss({compatibility: 'ie8'}))
         .pipe(rename({
@@ -105,8 +101,7 @@ gulp.task('sass', ['cleanCss'], function () {
 gulp.task('js', ['cleanJs'], function () {
     return gulp.src(config.src.file.js)
         .pipe(uglify())
-        .pipe(gulp.dest(config.dist.dir.js))
-        .pipe(livereload());
+        .pipe(gulp.dest(config.dist.dir.js));
 });
 
 // ==============================
@@ -151,7 +146,7 @@ gulp.task('watch', function () {
 //使用connect启动一个Web服务器
 gulp.task('connect', function () {
     connect.server({
-        root: config.root,
+        // root: config.root,
         port: 8090,
         livereload: true
     });

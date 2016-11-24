@@ -1,0 +1,6 @@
+@charset "UTF-8";
+@mixin inline-block{
+  zoom: 1;
+  display: inline-block;
+  *display: inline;
+}
