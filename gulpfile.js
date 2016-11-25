@@ -29,7 +29,7 @@ var o = {
 
 var config = {
     src: {
-        // root: 'src',
+        root: './',
         file: {
             scss: ['src/sass/**/*.scss'],
             js: 'src/js/**/*.js',
@@ -146,7 +146,7 @@ gulp.task('watch', function () {
 //使用connect启动一个Web服务器
 gulp.task('connect', function () {
     connect.server({
-        // root: config.root,
+        root: config.root,
         port: 8090,
         livereload: true
     });
