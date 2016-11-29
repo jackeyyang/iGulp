@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@import "goldfun";
+
+.ps-about{
+  .about-simple{
+    h2{
+      font-size: 3.6rem;
+    }
+    p{
+      text-indent: 2em;
+      line-height: 1.8em;
+    }
+  }
+}
+
+.st-support-platform{
+  padding: 70px 0 100px;
+  h2{
+    font-size: 2.4rem;
+    .title-circle{
+      @include inline-block;
+      overflow: hidden;
+      margin: 0 15px;
+      width: 8px;
+      height: 8px;
+      background: url("../img/circle_07.jpg") no-repeat;
+      vertical-align: middle;
+    }
+    .sub-title{
+      margin-left: 10px;
+      color: #702121;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+  }
+  .platform-block{
+    overflow: hidden;
+    margin-top: 60px;
+    .block-content{
+      overflow: hidden;
+      padding: 1em;
+      height: 350px;
+      .icon-ps{
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        height: 80px;
+        background-image: url("../img/icon-platform.png");
+      }
+      .icon-responsive{
+        background-position: 0 0;
+      }
+      .icon-pad{
+        background-position: -80px 0;
+      }
+      .icon-share{
+        background-position: -160px 0;
+      }
+      .icon-file{
+        background-position: -240px 0;
+      }
+      .icon-data{
+        background-position: -320px 0;
+      }
+      .icon-security{
+        background-position: -400px 0;
+      }
+      h3{
+        text-align: center;
+        font-size: 1.4rem;
+      }
+      p{
+        font-size: 1.4rem;
+        color: #444;
+        line-height: 1.5em;
+      }
+    }
+
+  }
+}
+
+.st-standard{
+  overflow: hidden;
+  padding: 80px 0;
+  background: #f8f8f8 url("../img/standard.jpg") repeat-x;
+  .standard-list{
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  h1{
+    margin-bottom: 50px;
+    font-size: 3.0rem;
+    color: #772323;
+    font-weight: normal;
+  }
+  ul{
+    li{
+      font-size: 2.0rem;
+      color: #444;
+      list-style: none;
+      line-height: 2.4em;
+      i{
+        @include inline-block;
+        margin-right: 10px;
+        width: 21px;
+        height: 21px;
+        background: url("../img/icon-right.jpg") no-repeat;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.st-team{
+  padding: 65px 0;
+  .our-dream{
+    text-align: center;
+    color: #989898;
+    font-size: 2.4rem;
+    line-height: 2.0em;
+  }
+  .team-photo{
+    margin-top: 30px;
+  }
+}
+
+.st-copyright-list{
+  padding: 75px 0;
+}
+
+/*手机*/
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+@media (max-width: 767px) {
+  .st-support-platform{
+    padding: 15px 15px 0;
+    h2{
+      text-align: center;
+    }
+    .platform-block{
+      margin: 15px 0;
+      .block-content {
+        overflow: hidden;
+        height: auto;
+      }
+    }
+  }
+
+  .st-standard{
+    padding: 15px 0;
+    h1{
+      margin-bottom: 15px;
+      font-size: 2.4rem;
+    }
+    ul {
+      li {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
