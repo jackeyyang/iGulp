@@ -1,6 +1,14 @@
 @charset "UTF-8";
+// 内联块
 @mixin inline-block{
   zoom: 1;
   display: inline-block;
   *display: inline;
+}
+
+// 超出盒子宽度显示省略号
+@mixin ellipsis{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
