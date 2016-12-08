@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>信诺软通-TouchStone</title>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/common.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/security.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="css/article.min.css">
 </head>
 <body>
+<div class="st-navbar-bg"></div>
 <div class="st-navbar">
     <div class="navbar st-nav layout1200">
         <div class="navbar-inner">
@@ -20,16 +21,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="#"><img class="img-responsive" src="../img/logo-touchstone.jpg" /></a>
+                <a class="brand" href="#"><img class="img-responsive" src="img/logo-touchstone.png" /></a>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
-                        <li><a class="nosub" href="index.html">首页</a></li>
+                        <li><a class="nosub active" href="index.html">首页</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown">产品与服务 <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">产品与服务 <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="product-service-security.html">考试运营服务</a></li>
                                 <li><a href="product-service-safe.html">考试安全</a></li>
-                                <li><a href="product-service-nopaper.html">无纸化考试</a></li>
+                                <li><a href="product-service-cp-ks.html">计算机考试系统</a></li>
                                 <li><a href="product-service-network.html">互联网+考试</a></li>
                                 <li><a href="product-service-standard.html">标准化考场</a></li>
                             </ul>
@@ -42,20 +43,16 @@
         </div>
     </div>
 </div>
+<div class="st-product-service">
+    <img src="img/news-center.jpg" class="img-responsive" alt="">
+</div>
 <div class="page-container">
-    <div class="st-product-service">
-        <img src="../img/server.jpg" class="img-responsive" alt="">
-    </div>
 
-    <div class="st-about ps-about no-paper">
+    <div class="st-news-center">
         <div class="layout1200">
-            <div class="row">
-                <div class="span4 visible-desktop text-right"><img src="../img/compute-ks_03.jpg" /></div>
-                <div class="span8 about-simple">
-                    <h2>无纸化考试</h2>
-                    <p>具有轻量化、快速、绿色部署的特点，可实现自动化测试、中心端全面管理等优势功能，支持断网、断电续考等各类“严肃考试”要求。具有轻量化、快速、绿色部署的特点，可实现自动化测试、中心端全面管理等优势功能，支持断网、断电续考等各类“严肃考试”要求。具有轻量化、快速、绿色部署的特点，可实现自动化测试、中心端全面管理等优势功能，支持断网、断电续考等各类“严肃考试”要求。</p>
+            <div class="location">当前位置：<a href="index.html">首页</a>&gt;<a href="news-list.html">最新动态</a>&gt;<a href="#" class="current">内容详情</a></div>
+            <div class="info-article">
 
-                </div>
             </div>
         </div>
     </div>
@@ -87,13 +84,13 @@
                         <strong>事务办理联系电话</strong>
                         <span>业务: 86-10-56299078-801</span>
                         <span>人力: 86-10-56299078-818</span>
-                        <span>售后: 86-10-83886932</span>
+                        <span>售后: 86-10-83886932&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </div>
                 </div>
                 <div class="span3 qrc">
-                    <strong>扫一扫  官网公众号</strong>
-                    <div class="qrc-img"><img src="../img/qrc_89.jpg"></div>
-                    <span>微信账号：xnrtyxgs</span>
+                    <strong>扫一扫  手机官网</strong>
+                    <div class="qrc-img"><img src="img/qrc_89.jpg"></div>
+
                 </div>
             </div>
         </div>
@@ -103,9 +100,20 @@
         Copyright（C） 2015<span class="visible"> - </span><a href="http://www.sinotn.com">北京信诺软通信息技术有限公司</a><span class="visible"> - </span>数字时代新考试<span class="visible"> - </span>京ICP备110107
     </div>
 </div>
-<script src="../js/jquery-1.12.2.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/common.js"></script>
-<script src="../js/index.js"></script>
+<script src="js/jquery-1.12.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/template.js"></script>
+<script id="articleInfo" type="text/html">
+    <h1>{{title}}</h1>
+    <div class="layout1200">
+        <div class="line"></div>
+        <div class="info-edit"><span>编辑：{{author}}</span><span>时间：{{date}}</span><span>分类: {{category}}</span></div>
+        <div class="article-p">
+            {{article}}
+        </div>
+    </div>
+</script>
+<script src="js/new-info.js"></script>
 </body>
 </html>

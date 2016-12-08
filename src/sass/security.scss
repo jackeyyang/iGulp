@@ -377,8 +377,18 @@
   }
 }
 
-.no-paper{
-  min-height: 680px;
+.st-nopaper{
+
+  .server-col{
+    text-align: center;
+    h2{
+      font-size: 3.0rem;
+      font-weight: normal;
+    }
+    p{
+      font-size: 2.0rem;
+    }
+  }
 }
 
 /*手机*/
@@ -528,7 +538,36 @@
     }
   }
 
-  .no-paper{
-    min-height: inherit;
+  .st-nopaper{
+    padding: 15px 0;
+    .server-col{
+      padding:0 0 15px;
+      p{
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .st-organization .organ-block{
+    position: static;
+    background: none;
+  }
+  .st-organization .organ-block .organ-des{
+    position: static;
+    top: 0;
+    left: 0;
+    width: auto;
+  }
+
+  .st-safe{
+    padding: 15px 0;
+  }
+  .st-safe .server-col{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+  .st-safe .server-col p{
+    font-size: 1.4rem;
   }
 }

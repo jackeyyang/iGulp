@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>信诺软通-TouchStone</title>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/common.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/index.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.min.css">
 </head>
 <body>
+<div class="st-navbar-bg"></div>
 <div class="st-navbar">
     <div class="navbar st-nav layout1200">
         <div class="navbar-inner">
             <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </a>
-                <a class="brand" href="#"><img class="img-responsive" src="../img/logo-touchstone.jpg" /></a>
-                <div class="nav-collapse collapse">
+                </button>
+                <a class="brand" href="#"><img class="img-responsive" src="img/logo-touchstone.png" /></a>
+                <div class="nav-collapse collapse collapsed">
                     <ul class="nav">
                         <li><a class="nosub active" href="index.html">首页</a></li>
                         <li class="dropdown">
@@ -29,7 +30,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="product-service-security.html">考试运营服务</a></li>
                                 <li><a href="product-service-safe.html">考试安全</a></li>
-                                <li><a href="product-service-nopaper.html">无纸化考试</a></li>
+                                <li><a href="product-service-cp-ks.html">计算机考试系统</a></li>
                                 <li><a href="product-service-network.html">互联网+考试</a></li>
                                 <li><a href="product-service-standard.html">标准化考场</a></li>
                             </ul>
@@ -42,45 +43,45 @@
         </div>
     </div>
 </div>
+<div class="st-slice visible-desktop">
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item"><img src="img/slider-1.jpg" /></div>
+            <div class="item"><img src="img/slider-2.jpg" /></div>
+            <div class="item"><img src="img/slider-3.jpg" /></div>
+        </div>
+    </div>
+</div>
+<div class="st-slice hidden-desktop">
+    <div id="myCarousel-m" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item"><img src="img/slider-m-1.jpg" /></div>
+            <div class="item"><img src="img/slider-m-2.jpg" /></div>
+            <div class="item"><img src="img/slider-m-3.jpg" /></div>
+        </div>
+    </div>
+</div>
 <div class="page-container">
-    <div class="st-slice visible-desktop">
-        <div id="myCarousel" class="carousel slide">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Carousel items -->
-            <div class="carousel-inner">
-                <div class="active item"><img src="../img/slider-1.jpg" /></div>
-                <div class="item"><img src="../img/slider-2.jpg" /></div>
-                <div class="item"><img src="../img/slider-3.jpg" /></div>
-            </div>
-        </div>
-    </div>
-    <div class="st-slice hidden-desktop">
-        <div id="myCarousel-m" class="carousel slide">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Carousel items -->
-            <div class="carousel-inner">
-                <div class="active item"><img src="../img/slider-m-1.jpg" /></div>
-                <div class="item"><img src="../img/slider-m-2.jpg" /></div>
-                <div class="item"><img src="../img/slider-m-3.jpg" /></div>
-            </div>
-        </div>
-    </div>
     <div class="st-about">
         <div class="layout1200">
             <div class="row">
-                <div class="span5 visible-desktop"><img src="../img/sino-advert.jpg" /></div>
+                <div class="span5 visible-desktop"><img src="img/sino-advert.jpg" /></div>
                 <div class="span7 about-simple">
                     <h2>信诺软通</h2>
                     <h3>专注于考试和教育服务领域,与客户携手开启数字考试新时代</h3>
-                    <p>北京信诺软通信息技术有限公司是一家以科技研发和应用为基础，基于网络、大数据和信息安全技术，为中央部委和地方政府、企事业单位、行业协会，提供专业化考试运营、考试安全、无纸化考试、考试测评、数字化培训产品和服务的高新技术企业。<a href="#">[详情]</a></p>
+                    <p>北京信诺软通信息技术有限公司是一家专注于使用“大数据 + 移动互联网（4G）+ 物联网技术”的新兴互联网高新技术企业，企业为国家部委、行业协会、大型企业提供考试测评和数字化培训服务，涵盖考试组织事务服务、考试安全服务、现代无纸化计算机考试服务（机考服务）、考前自测和数字化培训等服务。<a href="about-us.html">[详情]</a></p>
                 </div>
             </div>
         </div>
@@ -94,7 +95,7 @@
             <div class="row">
                 <div class="span3">
                     <div class="pro-cate">
-                        <img class="img-responsive" src="../img/advert-pro_07.jpg" />
+                        <img class="img-responsive" src="img/advert-pro_07.jpg" />
                         <h3>考试运营服务</h3>
                         <p>为客户提供自考试计划制定起至考试结束的全过程信息化解决方案和产品，依靠全国各地1500多家标准化考站及设施，可满足于全国性的统一执业资格和水平考试、学校、企业大型综合类考试</p>
                         <a class="btn btn-default btn-defaut-st" href="product-service-security.html">MORE</a>
@@ -102,7 +103,7 @@
                 </div>
                 <div class="span3">
                     <div class="pro-cate">
-                        <img class="img-responsive" src="../img/advert-pro_09.jpg" />
+                        <img class="img-responsive" src="img/advert-pro_09.jpg" />
                         <h3>考试安全</h3>
                         <p>采用国密级的安全认证体系与安全支撑云平台技术，结合数字加密技术、人像识别、RFID技术为考试全程提供信息安全、考生身份识别、试卷追溯和回收等考试安全保障。</p>
                         <a class="btn btn-default btn-defaut-st" href="product-service-safe.html">MORE</a>
@@ -110,15 +111,15 @@
                 </div>
                 <div class="span3">
                     <div class="pro-cate">
-                        <img class="img-responsive" src="../img/advert-pro_11.jpg" />
+                        <img class="img-responsive" src="img/advert-pro_11.jpg" />
                         <h3>无纸化考试</h3>
                         <p>具有轻量化、快速、绿色部署的特点，可实现自动化测试、中心端全面管理等优势功能，支持断网、断电续考等各类“严肃考试”要求。</p>
-                        <a class="btn btn-default btn-defaut-st" href="product-service-nopaper.html">MORE</a>
+                        <a class="btn btn-default btn-defaut-st" href="product-service-cp-ks.html">MORE</a>
                     </div>
                 </div>
                 <div class="span3">
                     <div class="pro-cate">
-                        <img class="img-responsive" src="../img/advert-pro_13.jpg" />
+                        <img class="img-responsive" src="img/advert-pro_13.jpg" />
                         <h3>互联网+考试</h3>
                         <p>“试金测评”是快速实施考试测评的工具，面对招聘、内部考核、随堂测验等应用场景，支持多种考试终端接入，基于移动互联网的方式，可集成各种培训系统和教育系统，实现“一分钟开始考试”的快速需求。</p>
                         <a class="btn btn-default btn-defaut-st" href="product-service-network.html">MORE</a>
@@ -159,18 +160,18 @@
             <h3>our clients</h3>
         </div>
         <div class="client-list layout1200">
-            <div class="span3 client-logo"><a href="#"><img src="../img/law.jpg" width="229" /></a></div>
-            <div class="span3 client-logo"><a href="#"><img src="../img/nongyebu.jpg" width="229" /></a></div>
-            <div class="span3 client-logo"><a href="#"><img src="../img/newscenter.jpg" width="229" /></a></div>
-            <div class="span3 client-logo"><a href="#"><img src="../img/transp.jpg" width="229" /></a></div>
-            <div class="span3 client-logo"><a href="#"><img src="../img/kaoshicenter.jpg" width="229" /></a></div>
-            <div class="span3 client-logo"><a href="#"><img src="../img/gold.jpg" width="229" /></a></div>
-            <div class="span3 client-logo"><a href="#"><img src="../img/animal.jpg" width="229" /></a></div>
-            <div class="span3 client-logo"><a href="#"><img src="../img/studion.jpg" width="229" /></a></div>
-            <div class="span3 client-logo"><a href="#"><img src="../img/zhengfa.jpg" width="229" /></a></div>
-            <div class="span3 client-logo"><a href="#"><img src="../img/xinanzhengfa.jpg" width="229" /></a></div>
-            <div class="span3 client-logo"><a href="#"><img src="../img/nongye.jpg" width="229" /></a></div>
-            <div class="span3 client-logo"><a href="our-client.html"><img src="../img/client-more.jpg" width="229" /></a></div>
+            <div class="span3 client-logo"><a href="#"><img src="img/law.jpg" width="229" /></a></div>
+            <div class="span3 client-logo"><a href="#"><img src="img/nongyebu.jpg" width="229" /></a></div>
+            <div class="span3 client-logo"><a href="#"><img src="img/newscenter.jpg" width="229" /></a></div>
+            <div class="span3 client-logo"><a href="#"><img src="img/transp.jpg" width="229" /></a></div>
+            <div class="span3 client-logo"><a href="#"><img src="img/kaoshicenter.jpg" width="229" /></a></div>
+            <div class="span3 client-logo"><a href="#"><img src="img/gold.jpg" width="229" /></a></div>
+            <div class="span3 client-logo"><a href="#"><img src="img/animal.jpg" width="229" /></a></div>
+            <div class="span3 client-logo"><a href="#"><img src="img/studion.jpg" width="229" /></a></div>
+            <div class="span3 client-logo"><a href="#"><img src="img/zhengfa.jpg" width="229" /></a></div>
+            <div class="span3 client-logo"><a href="#"><img src="img/xinanzhengfa.jpg" width="229" /></a></div>
+            <div class="span3 client-logo"><a href="#"><img src="img/nongye.jpg" width="229" /></a></div>
+            <div class="span3 client-logo"><a href="our-client.html"><img src="img/client-more.jpg" width="229" /></a></div>
         </div>
     </div>
 
@@ -213,13 +214,13 @@
                         <strong>事务办理联系电话</strong>
                         <span>业务: 86-10-56299078-801</span>
                         <span>人力: 86-10-56299078-818</span>
-                        <span>售后: 86-10-83886932</span>
+                        <span>售后: 86-10-83886932&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </div>
                 </div>
                 <div class="span3 qrc">
-                    <strong>扫一扫  官网公众号</strong>
-                    <div class="qrc-img"><img src="../img/qrc_89.jpg"></div>
-                    <span>微信账号：xnrtyxgs</span>
+                    <strong>扫一扫  手机官网</strong>
+                    <div class="qrc-img"><img src="img/qrc_89.jpg"></div>
+
                 </div>
             </div>
         </div>
@@ -229,9 +230,9 @@
         Copyright（C） 2015<span class="visible"> - </span><a href="http://www.sinotn.com">北京信诺软通信息技术有限公司</a><span class="visible"> - </span>数字时代新考试<span class="visible"> - </span>京ICP备110107
     </div>
 </div>
-<script src="../js/jquery-1.12.2.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/common.js"></script>
-<script src="../js/index.js"></script>
+<script src="js/jquery-1.12.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

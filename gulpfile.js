@@ -38,7 +38,7 @@ var config = {
             spriteImg: 'src/img/' + o.spriteName +'.png',
             spriteScss: 'src/scss/_' + o.spriteName + '.scss',
             font: 'src/font/*',
-            html: 'src/html/**/*',
+            html: 'src/*.html',
             vendor: 'src/vendor/**/*'
         },
         dir: {
@@ -60,7 +60,7 @@ var config = {
             css: 'dist/css',
             img: 'dist/img',
             font: 'dist/font',
-            html: 'dist/html',
+            html: 'dist/*.html',
             vendor: 'dist/vendor'
         }
     }
